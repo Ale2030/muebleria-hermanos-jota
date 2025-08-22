@@ -1,23 +1,94 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title>Productos</title>
-  </head>
-  <body>
-    <header></header>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Mueblería Hermanos Jota</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <h1>Mueblería<br><span>Hermanos Jota</span></h1>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="productos.html" class="nav-link active">Productos</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="nav-cart">
+                    <div class="cart-icon">
+                        <span class="cart-count" id="cart-count">0</span>
+                        🛒
+                    </div>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main>
-      <h1>Catálogo de productos</h1>
-      <article>
-        <h2>Producto 1</h2>
-        <p>Descripción...</p>
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog-header">
+                    <h1>Nuestro Catálogo</h1>
+                    <p>Descubre nuestra colección completa de muebles artesanales</p>
+                </div>
+                
+                <div class="search-section">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Buscar productos...">
+                        <button id="search-btn">🔍</button>
+                    </div>
+                </div>
+
+                <div class="products-container">
+                    <div class="products-grid" id="products-grid">
+                        <!-- Los productos se cargarán dinámicamente -->
+                    </div>
+                    <div class="loading" id="loading">
+                        <div class="loading-spinner"></div>
+                        <p>Cargando catálogo de productos...</p>
+                    </div>
+                </div>
+            </div>
         </section>
-      </article>
-      <aside>
-        <h3>Consejos de compra...</h3>
-        <p>Al comprar un mueble de nuestro catálogo...</p>
-      </aside>
     </main>
-    <footer></footer>
-  </body>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mueblería Hermanos Jota</h3>
+                    <p>Creando muebles únicos desde 1990</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📧 info@muebleriajota.com</p>
+                    <p>📞 +54 11 1234-5678</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <p>📱 @muebleriahermanosjota</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mueblería Hermanos Jota. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/productos.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/catalogo.js"></script>
+</body>
 </html>
