@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simulador de Feed de Instagram - Caso de Estudio Educativo">
+    <title>Instagram - Feed Simulado</title>
+    
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/placeholders.css">
+    
+    <!-- Fuentes del sistema (sin dependencias externas) -->
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="instagram-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="icon-placeholder logo-icon"></div>
+                <h1 class="instagram-logo">Mueblería Hermanos Jota</h1>
+            </div>
+            <div class="header-actions">
+                <div class="action-icon like-icon"></div>
+                <div class="action-icon share-icon"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Feed Container -->
+    <main class="feed-container">
+        <div class="feed-content">
+            
+            <!-- POST 1 - Video Reel Ejemplo -->
+            <article class="post" id="post-1">
+                <div class="post-header">
+                    <div class="profile-section">
+                        <img src="media/images/profile1.svg" alt="Profile" class="profile-pic">
+                        <div class="user-info">
+                            <span class="username">muebleria_hnos_jota</span>
+                            <span class="post-time">hace 2 días</span>
+                        </div>
+                    </div>
+                    <div class="post-options">
+                        <div class="icon-placeholder options-icon"></div>
+                    </div>
+                </div>
+
+                <div class="post-media post-media-video">
+                    <video 
+                        class="post-video" 
+                        controls 
+                        preload="auto"
+                        poster="media/images/video-thumbnail1.png">
+                        <source src="media/videos/reel1.mp4" type="video/mp4">
+                        Tu navegador no soporta videos HTML5.
+                    </video>
+                </div>
+
+                <div class="post-actions">
+                    <div class="primary-actions">
+                        <div class="action-icon like-icon"></div>
+                        <div class="action-icon comment-icon"></div>
+                        <div class="action-icon share-icon"></div>
+                    </div>
+                    <div class="save-action">
+                        <div class="action-icon save-icon"></div>
+                    </div>
+                </div>
+
+                <div class="post-info">
+                    <div class="likes-count">12,385 Me gusta</div>
+                    <div class="post-caption">
+                        <span class="username">muebleria_hnos_jota</span>
+                        <span class="caption-text">¡Renová tu hogar con estilo! ✨ Descubrí nuestra nueva colección de muebles de madera. Calidad y diseño que perduran. 🏡
+
+¡Gracias @carolo_ !
+
+#muebles #diseñodeinteriores #hogar #decoracion #muebleria #calidad #estilo</span>
+                    </div>
+                    <div class="view-comments">Ver los 24 comentarios</div>
+                    <div class="post-timestamp">hace 2 días</div>
+                </div>
+            </article>
+
+            <!-- POST 2 - Imagen con Historia -->
+            <article class="post" id="post-2">
+                <div class="post-header">
+                    <div class="profile-section">
+                        <img src="media/images/profile1.svg" alt="Profile" class="profile-pic">
+                        <div class="user-info">
+                            <span class="username">muebleria_hnos_jota</span>
+                            <span class="post-time">hace 1 semana</span>
+                        </div>
+                    </div>
+                    <div class="post-options">
+                        <div class="icon-placeholder options-icon"></div>
+                    </div>
+                </div>
+
+                <div class="post-media">
+                    <img src="media/images/post-image1.png" alt="Contenido del post" class="post-image">
+                </div>
+
+                <div class="post-actions">
+                    <div class="primary-actions">
+                        <div class="action-icon like-icon"></div>
+                        <div class="action-icon comment-icon"></div>
+                        <div class="action-icon share-icon"></div>
+                    </div>
+                    <div class="save-action">
+                        <div class="action-icon save-icon"></div>
+                    </div>
+                </div>
+
+                <div class="post-info">
+                    <div class="likes-count">8,923 Me gusta</div>
+                    <div class="post-caption">
+                        <span class="username">muebleria_hnos_jota</span>
+                        <span class="caption-text">Dulces sueños y diseño impecable. Nuestra nueva cama combina comodidad y estilo para transformar tu dormitorio. 😴
+
+#cama #dormitorio #diseñodeinteriores #descanso #muebles #estilo #hogar</span>
+                    </div>
+                    <div class="view-comments">Ver los 15 comentarios</div>
+                    <div class="post-timestamp">hace 1 semana</div>
+                </div>
+            </article>
+
+            <!-- POST 3 - Imagen Corporativa -->
+            <article class="post" id="post-3">
+                <div class="post-header">
+                    <div class="profile-section">
+                        <img src="media/images/profile1.svg" alt="Profile" class="profile-pic">
+                        <div class="user-info">
+                            <span class="username">muebleria_hnos_jota</span>
+                            <span class="post-time">hace 2 semanas</span>
+                        </div>
+                    </div>
+                    <div class="post-options">
+                        <div class="icon-placeholder options-icon"></div>
+                    </div>
+                </div>
+
+                <div class="post-media">
+                    <img src="media/images/post-image2.png" alt="Contenido del post" class="post-image">
+                </div>
+
+                <div class="post-actions">
+                    <div class="primary-actions">
+                        <div class="action-icon like-icon"></div>
+                        <div class="action-icon comment-icon"></div>
+                        <div class="action-icon share-icon"></div>
+                    </div>
+                    <div class="save-action">
+                        <div class="action-icon save-icon"></div>
+                    </div>
+                </div>
+
+                <div class="post-info">
+                    <div class="likes-count">15,672 Me gusta</div>
+                    <div class="post-caption">
+                        <span class="username">muebleria_hnos_jota</span>
+                        <span class="caption-text">Elegancia y modernidad en un solo mueble. Nuestra mesa ratona de vidrio y madera es la pieza central que tu sala de estar necesita. ✨
+
+#mesaratona #diseño #maderayvidrio #livingroom #decoracion #mueblesmodernos #hermanosjota</span>
+                    </div>
+                    <div class="view-comments">Ver los 31 comentarios</div>
+                    <div class="post-timestamp">hace 2 semanas</div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- JavaScript opcional -->
+    <script src="js/script.js"></script>
+</body>
+</html> 
