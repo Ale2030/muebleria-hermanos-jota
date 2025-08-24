@@ -1,0 +1,72 @@
+
+/* Catalogo */
+
+.catalog-header{
+    padding: 20px;
+    text-align: center;
+}
+
+.catalog-header h1{
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+}
+
+.catalog-header p {
+    text-align: center;
+    font-family: var(--font-secondary);
+    color: var(--secondary-color);
+}
+
+.search-box{
+    align-items: flex-start;
+    display: flex;
+}
+
+.search-box:hover{
+    border-color: var(--border-color);
+}
+
+.search-box input[type="text"]{
+    border: 1px solid var(--border-color);
+    outline: slategray;
+    border-radius: var(--radius-sm);
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.search-box button{
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    padding: 4px 10px;
+}
+
+.purchase-tips {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.purchase-tips-intro {
+    text-align: center;
+    font-family: var(--font-secondary);
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.purchase-tips h3 {
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    margin-top: 0;
+    text-align: center;
+}
+
+.purchase-tips ul {
+    list-style: disc;
+    padding: 19px;
+    color: var(--text-medium);
+}
+
+.purchase-tips li {
+    margin-bottom: 10px;
+}

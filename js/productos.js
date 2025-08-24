@@ -212,3 +212,13 @@ function renderProducts(productsToRender, containerId) {
         card.classList.add('fade-in');
     });
 }
+
+export {
+    loadProducts,
+    getProductById,
+    getFeaturedProducts,
+    searchProducts,
+    formatPrice,
+    createProductCard,
+    renderProducts
+};
