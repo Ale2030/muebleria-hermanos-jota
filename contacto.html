@@ -37,7 +37,57 @@
     </header>
 
     <main>
-      <!-- Aquí se agregará el contenido de la página de contacto -->
+        <!-- Encabezado con logo y título -->
+        <header class="header">
+            <div class="logo">
+                <!-- Logo de Hermanos Jota -->
+                <img src="logo_Hermanos_Jota.svg" alt="Hermanos Jota Logo" class="logo-img">
+            </div>
+            <h1>HERMANOS JOTA</h1>
+            <p>Contacto</p>
+        </header>
+
+        <!-- Contenido principal del formulario -->
+        <section class="form-container">
+            <!-- Introducción del formulario -->
+            <header class="form-intro">
+                <h2>¿Tenés alguna consulta?</h2>
+                <p>Nuestros clientes suelen tener preguntas. Dejanos tu mensaje y te responderemos a la brevedad.</p>
+            </header>
+
+            <!-- Formulario de contacto -->
+            <form id="contactForm">
+                <!-- Nombre -->
+                <fieldset class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required autofocus>
+                </fieldset>
+
+                <!-- Email -->
+                <fieldset class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autofocus>
+                </fieldset>
+
+                <!-- Mensaje -->
+                <fieldset class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos tu consulta o dejanos tu mensaje..." required autofocus></textarea>
+                </fieldset>
+
+                <!-- Botones -->
+                <footer class="form-actions">
+                    <button type="submit" class="submit-button" id="submit-button">Enviar</button>
+                    <button type="reset" class="reset-button">Reset</button>
+                </footer>
+            </form>
+
+            <!-- Mensaje de exito -->
+            <aside class="success-message" id="successMessage">
+                <h3>¡Mensaje enviado exitosamente!</h3>
+                <p>Gracias por contactarte con nosotros. Te responderemos a la brevedad.</p>
+            </aside>
+        </section>
     </main>
 
     <footer class="footer">
