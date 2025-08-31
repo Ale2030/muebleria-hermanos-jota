@@ -595,3 +595,111 @@ main {
         transform: translateY(0);
     }
 }
+
+/* Form Styles */
+/* Header Form */
+.form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl) var(--spacing-sm);
+    text-align: center;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40vh;
+
+}
+.section-text {
+    font-size: 1.2rem;
+    color: var(--text-medium);
+}
+.logo-img {
+    display: block;
+    object-fit: cover;
+    width: 150px;
+    margin: 0 auto var(--spacing-lg);
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.little {
+    font-size: 2rem;
+}
+
+.product-description {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--text-medium);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.6;
+} 
+
+/* Contact Form */ 
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-field {
+    margin-bottom: var(--spacing-lg);
+    border: none;
+}
+
+.form-field label {
+    display: block;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1rem;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    border: 2px solid var(--border-color);
+    background-color: var(--background-white);
+    color: var(--text-dark);
+    border-radius: var(--radius-md);
+    line-height: 1.5;
+    font-family: var(--font-secondary);
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 120px;
+    max-height: 300px;
+}
+
+/* Buttons */
+.form-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.btn {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+} 
+
+/* Responsive */ 
+@media (max-width: 768px) {
+    .form-buttons {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+} 
