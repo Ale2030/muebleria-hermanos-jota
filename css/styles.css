@@ -687,6 +687,12 @@ main {
     justify-content: center;
     background-color: var(--primary-color);
     color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .btn:hover {
@@ -694,6 +700,17 @@ main {
     color: white;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--border-color);
+    color: var(--text-dark);
 } 
 
 /* Responsive */ 
@@ -703,3 +720,303 @@ main {
         gap: var(--spacing-sm);
     }
 } 
+
+/* Toast Notifications */
+.toast-container {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.toast {
+    background: var(--primary-color);
+    color: white;
+    padding: 15px 20px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    min-width: 300px;
+    max-width: 400px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toast.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.toast.success {
+    background: #28a745;
+}
+
+.toast.error {
+    background: #dc3545;
+}
+
+.toast-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.toast-message {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.toast-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.toast-close:hover {
+    opacity: 1;
+}
+
+/* Cart Dropdown */
+.cart-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    min-width: 320px;
+    max-width: 400px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.cart-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.cart-dropdown-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-dropdown-title {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.cart-dropdown-close {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--text-medium);
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.cart-dropdown-close:hover {
+    background-color: var(--background-light);
+}
+
+.cart-dropdown-content {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.cart-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    flex-shrink: 0;
+}
+
+.cart-item-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.cart-item-name {
+    font-weight: 500;
+    color: var(--text-dark);
+    margin: 0 0 5px 0;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cart-item-price {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.cart-item-quantity-btn {
+    background: var(--background-light);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.cart-item-quantity-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.cart-item-quantity-value {
+    font-weight: 500;
+    min-width: 20px;
+    text-align: center;
+}
+
+.cart-dropdown-footer {
+    padding: 15px 20px;
+    border-top: 1px solid var(--border-color);
+    background: var(--background-light);
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-total-label {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.cart-total-value {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.cart-dropdown-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.cart-dropdown-actions .btn {
+    flex: 1;
+    height: 40px;
+    font-size: 0.9rem;
+}
+
+.cart-empty {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--text-medium);
+}
+
+.cart-empty-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.cart-empty-message {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Cart Icon with dropdown trigger */
+.nav-cart {
+    position: relative;
+}
+
+.cart-icon {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: var(--radius-sm);
+    transition: background-color 0.2s ease;
+    position: relative;
+}
+
+.cart-icon:hover {
+    background-color: var(--background-light);
+}
+
+/* Responsive adjustments for cart dropdown */
+@media (max-width: 768px) {
+    .cart-dropdown {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        min-width: auto;
+        max-width: none;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cart-dropdown-content {
+        flex: 1;
+        max-height: none;
+    }
+    
+    .toast {
+        min-width: 280px;
+        max-width: calc(100vw - 40px);
+        right: 10px;
+    }
+}
