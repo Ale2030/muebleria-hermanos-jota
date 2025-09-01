@@ -117,6 +117,7 @@ El sitio está optimizado para tres breakpoints principales:
 
 [Ignacio Javier Guridi]
 [Alexis Cuevas]
+[Valentina Martel]
 
 ## Próximas Mejoras
 
