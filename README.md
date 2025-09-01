@@ -65,7 +65,7 @@ Sitio web de e-commerce para "Mueblería Hermanos Jota", un taller familiar con 
 
 1. Clona el repositorio:
 ```bash
-git clone [https://github.com/Ale2030/muebleria-hermanos-jota.git]
+git clone https://github.com/Ale2030/muebleria-hermanos-jota.git
 ```
 
 2. Abre `index.html` en tu navegador web
