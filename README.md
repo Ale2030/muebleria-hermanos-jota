@@ -65,7 +65,7 @@ Sitio web de e-commerce para "Mueblería Hermanos Jota", un taller familiar con 
 
 1. Clona el repositorio:
 ```bash
-git clone [URL_DEL_REPOSITORIO]
+git clone https://github.com/Ale2030/muebleria-hermanos-jota.git
 ```
 
 2. Abre `index.html` en tu navegador web
@@ -115,7 +115,8 @@ El sitio está optimizado para tres breakpoints principales:
 
 ## Integrantes del Proyecto
 
-[Nombres de los integrantes del equipo]
+[Ignacio Javier Guridi]
+[Alexis Cuevas]
 
 ## Próximas Mejoras
 
