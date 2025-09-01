@@ -15,7 +15,7 @@ function validarFormulario(nombre, email, mensaje) {
     return '';
 }
 
-// Sucess message
+// Mensaje de exito
 function mostrarMensajeExito(nombre) {
     mensajeExito.querySelector('h3').textContent = `¡Gracias ${nombre}!`;
     mensajeExito.querySelector('p').textContent = 'Te vamos a responder pronto';
@@ -52,3 +52,4 @@ const navMenu = document.getElementById('nav-menu');
 navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
+
