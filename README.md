@@ -116,6 +116,7 @@ El sitio está optimizado para tres breakpoints principales:
 ## Integrantes del Proyecto
 
 [Ignacio Javier Guridi]
+[Alexis Cuevas]
 
 ## Próximas Mejoras
 
