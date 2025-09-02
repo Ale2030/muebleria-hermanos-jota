@@ -115,10 +115,10 @@ El sitio está optimizado para tres breakpoints principales:
 
 ## Integrantes del Proyecto
 
-[Ignacio Javier Guridi]
-[Alexis Cuevas]
-[Valentina Martel]
-[Facundo Delgado]
+- Cuevas Alexis <br>
+- Delgado Facundo <br>
+- Guridi Ignacio Javier <br>
+- Martel Valentina
 
 ## Próximas Mejoras
 
