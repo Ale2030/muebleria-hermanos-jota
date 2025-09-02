@@ -83,6 +83,18 @@ function renderProductDetail(product) {
     if (content) {
         content.classList.add('fade-in');
     }
+
+    // Agregar event listener al botón de añadir al carrito
+    const addToCartBtn = container.querySelector('.add-to-cart-btn');
+    if (addToCartBtn) {
+        addToCartBtn.addEventListener('click', function() {
+            const productId = this.getAttribute('data-product-id');
+            const product = getProductById(parseInt(productId));
+            if (product) {
+                agregarAlCarrito(product);
+            }
+        });
+    }
 }
 
 function updateBreadcrumb(product) {
