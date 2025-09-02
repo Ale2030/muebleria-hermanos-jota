@@ -42,4 +42,19 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         }
     }
+    
+    // Inicializar menú móvil
+    initializeMobileMenu();
 });
+
+// Funcionalidad del menú móvil
+function initializeMobileMenu() {
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+}
