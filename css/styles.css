@@ -1118,3 +1118,33 @@ main {
         font-size: 1rem;
     }
 }
+
+/* Tips for Purchase */
+.purchase-tips {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.purchase-tips-intro {
+    text-align: center;
+    font-family: var(--font-secondary);
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.purchase-tips h3 {
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    margin-top: 0;
+    text-align: center;
+}
+
+.purchase-tips ul {
+    list-style: disc;
+    padding: 19px;
+    color: var(--text-medium);
+}
+
+.purchase-tips li {
+    margin-bottom: 10px;
+}
