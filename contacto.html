@@ -36,59 +36,60 @@
         </nav>
     </header>
 
-    <main>
+     <main>
         <!-- Encabezado con logo y título -->
-        <header class="header">
-            <div class="logo">
+        <header class="container form">
                 <!-- Logo de Hermanos Jota -->
                 <img src="img/logo.svg" alt="Hermanos Jota Logo" class="logo-img">
-            </div>
-            <h1>HERMANOS JOTA</h1>
-            <p>Contacto</p>
+            <h1 class="section-title">HERMANOS JOTA</h1>
+            <p class="section-text">Contacto</p>
         </header>
 
         <!-- Contenido principal del formulario -->
-        <section class="form-container">
-            <!-- Introducción del formulario -->
-            <header class="form-intro">
-                <h2>¿Tenés alguna consulta?</h2>
-                <p>Nuestros clientes suelen tener preguntas. Dejanos tu mensaje y te responderemos a la brevedad.</p>
-            </header>
+        <section class="product-container">
+            <div class="container">
+                <!-- Introducción del formulario -->
+                <header>
+                    <h2 class="section-title little">¿Tenés alguna consulta?</h2>
+                    <p class="product-description">Nuestros clientes suelen tener preguntas. Dejanos tu mensaje y te responderemos a la brevedad.</p>
+                </header>
 
-            <!-- Formulario de contacto -->
-            <form id="contactForm">
-                <!-- Nombre -->
-                <fieldset class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required autofocus>
-                </fieldset>
+                <!-- Formulario de contacto -->
+                <form id="contactForm">
+                    <!-- Nombre -->
+                    <fieldset class="form-field">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required class="btn">
+                    </fieldset>
 
-                <!-- Email -->
-                <fieldset class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required autofocus>
-                </fieldset>
+                    <!-- Email -->
+                    <fieldset class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required class="btn">
+                    </fieldset>
 
-                <!-- Mensaje -->
-                <fieldset class="form-group">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos tu consulta o dejanos tu mensaje..." required autofocus></textarea>
-                </fieldset>
+                    <!-- Mensaje -->
+                    <fieldset class="form-field">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos tu consulta o dejanos tu mensaje..." required class="btn"></textarea>
+                    </fieldset>
 
-                <!-- Botones -->
-                <div class="form-actions">
-                    <button type="submit" class="submit-button" id="submit-button">Enviar</button>
-                    <button type="reset" class="reset-button">Reset</button>
+                    <!-- Botones -->
+                    <div class="form-buttons">
+                        <button type="submit" class="btn">Enviar</button>
+                        <button type="reset" class="btn">Borrar</button>
+                    </div>
+                </form>
+
+                <!-- Mensaje de éxito -->
+                <div id="successMessage" class="success-container hidden fade-in">
+                    <h3 class="product-description">¡Mensaje enviado exitosamente!</h3>
+                    <p class="product-description">Gracias por contactarte con nosotros. Te responderemos a la brevedad.</p>
                 </div>
-            </form>
-
-            <!-- Mensaje de exito -->
-            <div class="success-message">
-                <h3>¡Mensaje enviado exitosamente!</h3>
-                <p>Gracias por contactarte con nosotros. Te responderemos a la brevedad.</p>
             </div>
         </section>
     </main>
+
 
     <footer class="footer">
         <div class="container">
