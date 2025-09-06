@@ -190,7 +190,7 @@ function showProductError(message) {
     }
 
     // Actualizar título de la página
-    document.title = `Producto no encontrado - Mueblería Hermanos Jota`;
+    document.title = `Mueblería Hermanos Jota`;
 }
 
 // Manejar zoom de imagen del producto (mejora opcional)
