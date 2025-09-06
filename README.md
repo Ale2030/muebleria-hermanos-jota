@@ -118,7 +118,8 @@ El sitio está optimizado para tres breakpoints principales:
 - Cuevas Alexis <br>
 - Delgado Facundo <br>
 - Guridi Ignacio Javier <br>
-- Martel Valentina
+- Martel Valentina <br>
+- Fuentes Santino
 
 ## Próximas Mejoras
 
