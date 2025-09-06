@@ -36,59 +36,84 @@
         </nav>
     </header>
 
-    <main>
+     <main>
         <!-- Encabezado con logo y título -->
-        <header class="header">
-            <div class="logo">
-                <!-- Logo de Hermanos Jota -->
-                <img src="logo.svg" alt="Hermanos Jota Logo" class="logo-img">
+        <section class="contact-hero">
+            <div class="container">
+                <div class="contact-hero-content">
+                    <div class="contact-logo-section">
+                        <img src="img/logo.svg" alt="Hermanos Jota Logo" class="contact-logo">
+                        <h1 class="contact-title">HERMANOS JOTA</h1>
+                        <p class="contact-subtitle">Muebles Artesanales de Calidad</p>
+                    </div>
+                </div>
             </div>
-            <h1>HERMANOS JOTA</h1>
-            <p>Contacto</p>
-        </header>
+        </section>
 
         <!-- Contenido principal del formulario -->
-        <section class="form-container">
-            <!-- Introducción del formulario -->
-            <header class="form-intro">
-                <h2>¿Tenés alguna consulta?</h2>
-                <p>Nuestros clientes suelen tener preguntas. Dejanos tu mensaje y te responderemos a la brevedad.</p>
-            </header>
-
-            <!-- Formulario de contacto -->
-            <form id="contactForm">
-                <!-- Nombre -->
-                <fieldset class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required autofocus>
-                </fieldset>
-
-                <!-- Email -->
-                <fieldset class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required autofocus>
-                </fieldset>
-
-                <!-- Mensaje -->
-                <fieldset class="form-group">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos tu consulta o dejanos tu mensaje..." required autofocus></textarea>
-                </fieldset>
-
-                <!-- Botones -->
-                <div class="form-actions">
-                    <button type="submit" class="submit-button" id="submit-button">Enviar</button>
-                    <button type="reset" class="reset-button">Reset</button>
+        <section class="contact">
+            <div class="container">
+                <div class="contact-header">
+                    <h2>Contáctanos</h2>
+                    <p>¿Tienes alguna pregunta sobre nuestros muebles? Estamos aquí para ayudarte.</p>
                 </div>
-            </form>
 
-            <!-- Mensaje de exito -->
-            <div class="success-message">
-                <h3>¡Mensaje enviado exitosamente!</h3>
-                <p>Gracias por contactarte con nosotros. Te responderemos a la brevedad.</p>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Información de Contacto</h2>
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p>info@muebleriajota.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📞 Teléfono</h3>
+                            <p>+54 11 1234-5678</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>📍 Dirección</h3>
+                            <p>Av. Artesanos 123<br>Buenos Aires, Argentina</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>🕒 Horarios</h3>
+                            <p>Lunes a Viernes: 9:00 - 18:00<br>Sábados: 9:00 - 13:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form">
+                            <h2>Envíanos un Mensaje</h2>
+                            
+                            <div class="form-group">
+                                <label for="name">Nombre *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensaje *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </form>
+
+                        <div class="success-message" id="success-message">
+                            <h3>¡Mensaje Enviado!</h3>
+                            <p>Gracias por contactarnos. Te responderemos a la brevedad.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
 
     <footer class="footer">
         <div class="container">

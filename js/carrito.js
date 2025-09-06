@@ -335,4 +335,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // Se llama a la función al cargar la página para mostrar el número de productos guardados.
     const totalProductos = carrito.reduce((total, item) => total + item.cantidad, 0);
     actualizarContadorCarrito(totalProductos);
+    
+    // Inicializar menú móvil
+    initializeMobileMenu();
 });
+
+// Funcionalidad del menú móvil
+function initializeMobileMenu() {
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+}

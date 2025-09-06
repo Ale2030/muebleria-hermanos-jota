@@ -97,6 +97,21 @@ function renderProductDetail(product) {
     }
 }
 
+// Funcionalidad del menú móvil
+function initializeMobileMenu() {
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+}
+
+// Inicializar menú móvil cuando se carga la página
+document.addEventListener('DOMContentLoaded', initializeMobileMenu);
+
 function updateBreadcrumb(product) {
     const breadcrumbProduct = document.getElementById('breadcrumb-product');
     if (breadcrumbProduct) {
