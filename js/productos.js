@@ -6,7 +6,7 @@ const products = [
     description:
       "Mesa de comedor de madera maciza con acabado rústico. Perfecta para reuniones familiares.",
     price: 45000,
-    image: "/img/Mesa Comedor Pampa.png",
+    image: "img/Mesa Comedor Pampa.png",
     category: "mesas",
     featured: true,
     specifications: {
@@ -22,7 +22,7 @@ const products = [
     description:
       "Silla ergonómica con diseño moderno y estructura de madera resistente.",
     price: 12000,
-    image: "/img/Silla Artesanal Moderna.png",
+    image: "img/Silla Artesanal Moderna.png",
     category: "sillas",
     featured: true,
     specifications: {
@@ -35,9 +35,9 @@ const products = [
   },
   {
     id: 3,
-    name: "Estantería de Pino",
+    name: "Sillon de Cuero",
     description:
-      "Estantería versátil de 5 niveles, ideal para libros, decoración y almacenamiento.",
+      "Sillon de cuero, ideal para sentarse y ver las series.",
     price: 28000,
     image:
       "https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&w=400",
@@ -75,7 +75,7 @@ const products = [
     description:
       "Escritorio funcional con cajones y compartimentos para oficina en casa.",
     price: 32000,
-    image: "/img/Escritorio Costa.png",
+    image: "img/Escritorio Costa.png",
     category: "escritorios",
     featured: false,
     specifications: {
@@ -92,7 +92,7 @@ const products = [
     description:
       "Sillón de estilo moderno y confortable, ideal para interiores y exteriores cubiertos.",
     price: 48000,
-    image: "/img/Sillón Copacabana.png",
+    image: "img/Sillón Copacabana.png",
     category: "sillones",
     featured: false,
     specifications: {
@@ -105,9 +105,9 @@ const products = [
 
   {
     id: 7,
-    name: "Mesa de Centro Circular",
+    name: "Mesa de Centro ",
     description:
-      "Mesa de centro con diseño circular único y base esculpida a mano.",
+      "Mesa de centro con diseño  único.",
     price: 22000,
     image:
       "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=400",
@@ -123,9 +123,9 @@ const products = [
   },
   {
     id: 8,
-    name: "Armario Ropero Clásico",
+    name: "Sillon L",
     description:
-      "Armario de 3 puertas con espejo central y múltiples compartimentos internos.",
+      "Sillon en formatos L para espacios amplios.",
     price: 78000,
     image:
       "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=400",
@@ -145,7 +145,7 @@ const products = [
     description:
       "Aparador de diseño contemporáneo con amplio espacio de guardado.",
     price: 62000,
-    image: "/img/Aparador Uspallata.png",
+    image: "img/Aparador Uspallata.png",
     category: "aparadores",
     featured: true,
     specifications: {
@@ -161,7 +161,7 @@ const products = [
     name: "Biblioteca Recoleta",
     description: "Biblioteca amplia con estantes regulables y diseño elegante.",
     price: 75000,
-    image: "/img/Biblioteca Recoleta.png",
+    image: "img/Biblioteca Recoleta.png",
     category: "bibliotecas",
     featured: true,
     specifications: {
@@ -177,7 +177,7 @@ const products = [
     name: "Butaca Mendoza",
     description: "Butaca tapizada de estilo moderno, cómoda y versátil.",
     price: 38000,
-    image: "/img/Butaca Mendoza.png",
+    image: "img/Butaca Mendoza.png",
     category: "butacas",
     featured: false,
     specifications: {
@@ -193,7 +193,7 @@ const products = [
     description:
       "Mesa baja de centro con estilo minimalista y terminación natural.",
     price: 45000,
-    image: "/img/Mesa de Centro Araucaria.png",
+    image: "img/Mesa de Centro Araucaria.png",
     category: "mesas",
     featured: true,
     specifications: {
@@ -226,7 +226,7 @@ const products = [
     description:
       "Sillas de comedor robustas y cómodas, con respaldo ergonómico.",
     price: 16000,
-    image: "/img/Sillas Córdoba.png",
+    image: "img/Sillas Córdoba.png",
     category: "sillas",
     featured: true,
     specifications: {
@@ -242,7 +242,7 @@ const products = [
     description:
       "Sofá amplio de 3 cuerpos con diseño moderno y gran comodidad.",
     price: 125000,
-    image: "/img/Sofá Patagonia.png",
+    image: "img/Sofá Patagonia.png",
     category: "sofás",
     featured: true,
     specifications: {
